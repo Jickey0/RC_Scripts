@@ -23,8 +23,9 @@ print("Version:", upyrc.get_version())
 
 print("\n----------- INIT CONNECTION --------------------------------------------------------------------------------------------------------------------------------\n")
 
-# Create a connection to Unreal
-conn = upyrc.URConnection()
+
+# Create a connection to Unreal --> host='192.168.0.20' if connecting to rig
+conn = upyrc.URConnection(host='192.168.0.20')
 print("Ping: ", conn.ping())
 # >>> Ping: 127.0.0.1:30010
 
